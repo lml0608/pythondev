@@ -21,7 +21,7 @@ Dictionary 字典 {}
 
 import keyword
 #查看关键字
-print(keyword.kwlist)
+#print(keyword.kwlist)
 
 a = input()
 

@@ -5,10 +5,27 @@ __author__:liubin
 '''
 
 
-x = 500 // 60
+# x = 500 // 60
+#
+# y = 500 % 60
+#
+# print(x)
+#
+# print(y)
 
-y = 500 % 60
+def getAverage(a,b):
+    result = a + b
 
-print(x)
+    print("result=%d" % result)
 
-print(y)
+    return result
+
+
+a = 100
+b = 200
+
+c = a + b
+
+ret = getAverage(a,b)
+
+print(ret)
