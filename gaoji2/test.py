@@ -4,6 +4,9 @@ __author__:liubin
 
 '''
 
+import os
+os.getcwd()
+
 
 # x = 500 // 60
 #

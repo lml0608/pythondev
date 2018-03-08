@@ -66,10 +66,28 @@ where对原始数据集进行过滤，having对GROUP BY的结果集进行刷选
 
 排序
 
+分页
+
+select *from student limit start,count; 索引从0开始
+select * from student LIMIT 1,3;
+
+
+存储关系
+
+
 
 关系的存储
 连接查询
 自关联
+
+同一个表一个字段关联另一个字段
+create table areas(
+id int primary key,
+atitle varchar(20),
+pid int,
+foreign key(pid) references areas(id)
+);
+
 字查询
 内置函数
 视图
