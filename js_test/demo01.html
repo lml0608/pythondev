@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 基本语法</title>
+
+    <script type="text/javascript">
+
+        //单行注释
+
+        /*
+        多行注释
+
+        五种基本类型
+        number string boolean  undefined  null
+
+        object
+         */
+
+        var a = 123;
+        var b = 'abc';
+
+        window.onload = function () {
+
+            var odiv = document.getElementById('div1');
+
+            var attr = 'color';
+
+            //odiv.style[attr] = 'red';
+            //odiv.style.color = 'red';
+
+            odiv['style'][attr] = 'red';
+            //odiv.innerHTML = 'helle';
+            //元素包裹的内容
+            alert(odiv.innerHTML)
+
+            var odiv2 = document.getElementById('div2');
+
+            odiv2.innerHTML = "<a href='http://www.baidu.com'>百度</a>";
+
+        }
+
+    </script>
+</head>
+<body>
+
+<div id="div1">这是一个div元素</div>
+<div id="div2"></div>
+
+</body>
+</html>
